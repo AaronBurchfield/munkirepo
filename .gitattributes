@@ -1,0 +1,4 @@
+*.png filter=fat -crlf
+*.jpg filter=fat -crlf
+*.pkg filter=fat -crlf
+*.dmg filter=fat -crlf
