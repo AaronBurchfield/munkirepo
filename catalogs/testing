@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>production</string>
+		</array>
+		<key>category</key>
+		<string>Text Editors</string>
+		<key>description</key>
+		<string>A hackable text editor for the 21st Century</string>
+		<key>developer</key>
+		<string>GitHub, Inc.</string>
+		<key>display_name</key>
+		<string>Atom</string>
+		<key>icon_hash</key>
+		<string>dce946bba4534f8f8cbb7ba2bacb3cf72d389303ff15ae31dc3b7a756af33064</string>
+		<key>installer_item_hash</key>
+		<string>b4db63acd87f84d4229ef15e4b620199569dd539e1d0ae2b4dafc4e907c5d74a</string>
+		<key>installer_item_location</key>
+		<string>apps/Atom-1.0.5.dmg</string>
+		<key>installer_item_size</key>
+		<integer>76054</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.github.atom</string>
+				<key>CFBundleName</key>
+				<string>Atom</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.0.5</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.5</string>
+				<key>minosversion</key>
+				<string>10.8</string>
+				<key>path</key>
+				<string>/Applications/Atom.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Atom.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.8</string>
+		<key>name</key>
+		<string>Atom</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/sh
+
+# Simulate the "Atom -&gt; Install Shell Commands"
+
+# /usr/local/bin/atom
+ATOM_SOURCE="/Applications/Atom.app/Contents/Resources/app/atom.sh"
+ATOM_TARGET="/usr/local/bin/atom"
+if [[ -f "${ATOM_SOURCE}" ]]; then
+    echo "Creating symbolic link ${ATOM_SOURCE} -&gt; ${ATOM_TARGET}"
+    /bin/ln -s "${ATOM_SOURCE}" "${ATOM_TARGET}"
+else
+    echo "${ATOM_SOURCE} doesn't exist..."
+fi
+
+# /usr/local/bin/apm
+APM_SOURCE="/Applications/Atom.app/Contents/Resources/app/apm/node_modules/.bin/apm"
+APM_TARGET="/usr/local/bin/apm"
+if [[ -f "${APM_SOURCE}" ]]; then
+    echo "Creating symbolic link ${APM_SOURCE} -&gt; ${APM_TARGET}"
+    /bin/ln -s "${APM_SOURCE}" "${APM_TARGET}"
+else
+    echo "${APM_SOURCE} doesn't exist..."
+fi
+
+exit 0
+</string>
+		<key>postuninstall_script</key>
+		<string>#!/bin/sh
+
+# /usr/local/bin/atom
+ATOM="/usr/local/bin/atom"
+if [[ -L "${ATOM}" ]]; then
+    echo "Removing ${ATOM}"
+    /bin/rm -f "${ATOM}"
+else
+    echo "${ATOM} doesn't exist..."
+fi
+
+# /usr/local/bin/apm
+APM="/usr/local/bin/apm"
+if [[ -L "${APM}" ]]; then
+    echo "Removing ${APM}"
+    /bin/rm -f "${APM}"
+else
+    echo "${APM} doesn't exist..."
+fi
+
+exit 0
+</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.0.5</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>production</string>
+		</array>
+		<key>description</key>
+		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>display_name</key>
+		<string>Google Chrome</string>
+		<key>icon_hash</key>
+		<string>5816c1c1e3199f5ece45aa62c7d99e64f9902a94c8bfe5c70a9068de87d492d8</string>
+		<key>installer_item_hash</key>
+		<string>fad7204653d65c4e567ea2979747726cd1bd05b8c73264b69c660947e457e57d</string>
+		<key>installer_item_location</key>
+		<string>apps/GoogleChrome-44.0.2403.130.dmg</string>
+		<key>installer_item_size</key>
+		<integer>64659</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.google.Chrome</string>
+				<key>CFBundleName</key>
+				<string>Chrome</string>
+				<key>CFBundleShortVersionString</key>
+				<string>44.0.2403.130</string>
+				<key>CFBundleVersion</key>
+				<string>2403.130</string>
+				<key>minosversion</key>
+				<string>10.6.0</string>
+				<key>path</key>
+				<string>/Applications/Google Chrome.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Google Chrome.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.6.0</string>
+		<key>name</key>
+		<string>GoogleChrome</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>44.0.2403.130</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>Alfred 2</string>
+			<string>Alfred Preferences</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>production</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>Alfred is a productivity application for Mac OS X, which aims to save you time in searching your local computer and the web.</string>
+		<key>developer</key>
+		<string>Running with Crayons Ltd</string>
+		<key>display_name</key>
+		<string>Alfred 2</string>
+		<key>installer_item_hash</key>
+		<string>465daedb9a956f8a608eaa04dc4232cdfa644fbc7e78b50f0bb618504de55824</string>
+		<key>installer_item_location</key>
+		<string>apps/Alfred/Alfred2-2.7.1__1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>4257</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.runningwithcrayons.Alfred-2</string>
+				<key>CFBundleName</key>
+				<string>Alfred 2</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.7.1</string>
+				<key>CFBundleVersion</key>
+				<string>387</string>
+				<key>minosversion</key>
+				<string>10.6</string>
+				<key>path</key>
+				<string>/Applications/Alfred 2.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Alfred 2.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.6</string>
+		<key>name</key>
+		<string>Alfred2</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>unattended_uninstall</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.7.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>production</string>
+		</array>
+		<key>description</key>
+		<string>Dropbox is a free service that lets you bring all your photos, docs, and videos anywhere. This means that any file you save to your Dropbox will automatically save to all your computers, phones and even the Dropbox website.</string>
+		<key>display_name</key>
+		<string>Dropbox</string>
+		<key>icon_hash</key>
+		<string>ca089e468cf43c8ade5eaa43b0a31473b5c36f7b16185281d6440e8069ebb318</string>
+		<key>installer_item_hash</key>
+		<string>8cdf529f755f5387fa6b7ed41e32e96c6f811e4422990a90dc0833d232900f4b</string>
+		<key>installer_item_location</key>
+		<string>apps/Dropbox/Dropbox-3.8.6.dmg</string>
+		<key>installer_item_size</key>
+		<integer>36867</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.getdropbox.dropbox</string>
+				<key>CFBundleName</key>
+				<string>Dropbox</string>
+				<key>path</key>
+				<string>/Applications/Dropbox.app</string>
+				<key>type</key>
+				<string>file</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Dropbox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.6.0</string>
+		<key>name</key>
+		<string>Dropbox</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/sh
+# based on Ruby postinstall script by Riley Shott:
+# https://groups.google.com/group/munki-dev/browse_thread/thread/a2813e7f62535f13/63d127534541f863
+# modifications:
+# - always extract the helper tool with each install instead of skipping if it exists
+# - remove xattr com.apple.quarantine removal, as Munki will have already done this upon 
+#   installation; normal autopkg runs also won't quarantine the download to begin with
+
+HELPER_SRC_PATH=/Applications/Dropbox.app/Contents/Resources/DropboxHelperInstaller.tgz
+HELPER_DST_DIR=/Library/DropboxHelperTools
+HELPER_DST_PATH="$HELPER_DST_DIR/DropboxHelperInstaller"
+
+if [ -e "$HELPER_SRC_PATH" ]; then
+  [ -d "$HELPER_DST_DIR" ] || mkdir "$HELPER_DST_DIR"
+  /usr/bin/tar -C "$HELPER_DST_DIR" -xz -f "$HELPER_SRC_PATH"
+  /bin/chmod 04511 "$HELPER_DST_PATH"
+  /usr/sbin/chown root:wheel "$HELPER_DST_PATH"
+else
+  echo "Expected $HELPER_SRC_PATH, but it was not present in the Dropbox dmg."
+  exit 1
+fi
+</string>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.8.6</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>production</string>
+		</array>
+		<key>description</key>
+		<string>Evernote makes it easy to remember things big and small from your everyday life using your computer, phone, tablet and the web.</string>
+		<key>display_name</key>
+		<string>Evernote</string>
+		<key>installer_item_hash</key>
+		<string>76d56eaf0d758af5b71473ef51c3488a4a19e0a173203e64784cf920efff013d</string>
+		<key>installer_item_location</key>
+		<string>apps/Evernote/Evernote-6.0.16.dmg</string>
+		<key>installer_item_size</key>
+		<integer>73436</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.evernote.Evernote</string>
+				<key>CFBundleName</key>
+				<string>Evernote</string>
+				<key>CFBundleShortVersionString</key>
+				<string>6.0.16</string>
+				<key>CFBundleVersion</key>
+				<string>451861</string>
+				<key>minosversion</key>
+				<string>10.7.5</string>
+				<key>path</key>
+				<string>/Applications/Evernote.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Evernote.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.7.5</string>
+		<key>name</key>
+		<string>Evernote</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>6.0.16</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>production</string>
+		</array>
+		<key>description</key>
+		<string>GUI application for GitHub.com</string>
+		<key>display_name</key>
+		<string>GitHub</string>
+		<key>icon_hash</key>
+		<string>026ac35d0fa606224d34cfdc8bdca26c6457b0f58b8cbcd609896baaf173b104</string>
+		<key>installer_item_hash</key>
+		<string>0ea45811e9060443c5331a638100f9ecc6b02caccb2d2498e7590436a851062e</string>
+		<key>installer_item_location</key>
+		<string>apps/GitHub/GitHub-208.dmg</string>
+		<key>installer_item_size</key>
+		<integer>35743</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.github.GitHub</string>
+				<key>CFBundleName</key>
+				<string>GitHub</string>
+				<key>CFBundleShortVersionString</key>
+				<string>The Sum of All Feels</string>
+				<key>CFBundleVersion</key>
+				<string>208</string>
+				<key>minosversion</key>
+				<string>10.9</string>
+				<key>path</key>
+				<string>/Applications/GitHub.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleVersion</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>GitHub.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.9</string>
+		<key>name</key>
+		<string>GitHub</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/sh
+CLI_SOURCE="/Applications/GitHub.app/Contents/MacOS/github_cli"
+DEST_DIR="/usr/local/bin"
+if [ ! -x "${CLI_SOURCE}" ]; then
+    exit 1
+fi
+
+if [ ! -d "${DEST_DIR}" ]; then
+    /bin/mkdir -p "${DEST_DIR}"
+fi
+
+/bin/cp -f "${CLI_SOURCE}" "${DEST_DIR}/github"
+</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>uninstall_script</string>
+		<key>uninstall_script</key>
+		<string>#!/bin/sh
+/bin/rm -rf /Applications/GitHub.app
+/bin/rm -f /usr/local/bin/github
+</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>208</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>production</string>
+		</array>
+		<key>description</key>
+		<string>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.</string>
+		<key>display_name</key>
+		<string>Handbrake</string>
+		<key>installer_item_hash</key>
+		<string>9591cefbfcbe97ad4e039b456f82ea0e76035b5db9c9aa2ebca044fb171d4dd5</string>
+		<key>installer_item_location</key>
+		<string>apps/Handbrake/Handbrake-0.10.2 x86_64.dmg</string>
+		<key>installer_item_size</key>
+		<integer>10339</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>fr.handbrake.HandBrake</string>
+				<key>CFBundleName</key>
+				<string>HandBrake</string>
+				<key>CFBundleShortVersionString</key>
+				<string>0.10.2 x86_64</string>
+				<key>CFBundleVersion</key>
+				<string>2015061100</string>
+				<key>minosversion</key>
+				<string>10.6</string>
+				<key>path</key>
+				<string>/Applications/HandBrake.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleVersion</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>HandBrake.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.6</string>
+		<key>name</key>
+		<string>Handbrake</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>0.10.2 x86_64</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>production</string>
+		</array>
+		<key>description</key>
+		<string>Powerful alternative to Terminal.app.</string>
+		<key>display_name</key>
+		<string>iTerm2</string>
+		<key>icon_hash</key>
+		<string>69028ee845978eb656ffeb789f1ae869b82bfc6a42cc0247ae8f819d4a4ebfaf</string>
+		<key>installer_item_hash</key>
+		<string>57497bc4ee29903b14197fb4bfc07e42779b3890a1cfdbb1cf3eeacb86e9892d</string>
+		<key>installer_item_location</key>
+		<string>apps/iTerm2/iTerm2-2.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>3045</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.googlecode.iterm2</string>
+				<key>CFBundleName</key>
+				<string>iTerm</string>
+				<key>CFBundleShortVersionString</key>
+				<string>2.0</string>
+				<key>CFBundleVersion</key>
+				<string>2.0</string>
+				<key>path</key>
+				<string>/Applications/iTerm.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>iTerm.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.4.0</string>
+		<key>name</key>
+		<string>iTerm2</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>production</string>
+		</array>
+		<key>description</key>
+		<string>Create, manage, and debug launchd(8) services.</string>
+		<key>display_name</key>
+		<string>LaunchControl</string>
+		<key>installer_item_hash</key>
+		<string>cdf534257f93728294ad07a2201026a063d8d0bd00e5d56b293a41afd88b149a</string>
+		<key>installer_item_location</key>
+		<string>apps/LaunchControl/LaunchControl-1.21.dmg</string>
+		<key>installer_item_size</key>
+		<integer>5385</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.soma-zone.LaunchControl</string>
+				<key>CFBundleName</key>
+				<string>LaunchControl</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.21</string>
+				<key>CFBundleVersion</key>
+				<string>689</string>
+				<key>minosversion</key>
+				<string>10.6</string>
+				<key>path</key>
+				<string>/Applications/LaunchControl.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>LaunchControl.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.6</string>
+		<key>name</key>
+		<string>LaunchControl</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.21</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>production</string>
+		</array>
+		<key>description</key>
+		<string>Adobe® Flash® Player is a cross-platform browser-based application runtime that delivers uncompromised viewing of expressive applications, content, and videos across screens and browsers.</string>
+		<key>display_name</key>
+		<string>Adobe Flash Player</string>
+		<key>icon_hash</key>
+		<string>6e786116e5c98081959e28ed3dab8e151b843b012b251786f3c1fdaa77f1e7a9</string>
+		<key>installed_size</key>
+		<integer>16816</integer>
+		<key>installer_item_hash</key>
+		<string>1c72a229d592390f9eef465bb790ad035247a47755bbcb4884bf1bc29b5b4f1e</string>
+		<key>installer_item_location</key>
+		<string>internet_plugins/AdobeFlashPlayer-18.0.0.209.dmg</string>
+		<key>installer_item_size</key>
+		<integer>16040</integer>
+		<key>minimum_os_version</key>
+		<string>10.5.0</string>
+		<key>name</key>
+		<string>AdobeFlashPlayer</string>
+		<key>package_path</key>
+		<string>Install Adobe Flash Player.app/Contents/Resources/Adobe Flash Player.pkg</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>16816</integer>
+				<key>packageid</key>
+				<string>com.adobe.pkg.FlashPlayer</string>
+				<key>version</key>
+				<string>18.0.0.209</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>18.0.0.209</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+			<string>production</string>
+		</array>
+		<key>description</key>
+		<string>Facter is an independent, cross-platform Ruby library designed to gather information on all the nodes you will managing with Puppet.</string>
+		<key>display_name</key>
+		<string>Facter</string>
+		<key>installed_size</key>
+		<integer>397</integer>
+		<key>installer_item_hash</key>
+		<string>84212e09e30e174a84ac77227496055f6708eb853fb34a02ad290e6bb4cf9e34</string>
+		<key>installer_item_location</key>
+		<string>support/Facter/Facter-2.4.4.dmg</string>
+		<key>installer_item_size</key>
+		<integer>115</integer>
+		<key>minimum_os_version</key>
+		<string>10.5.0</string>
+		<key>name</key>
+		<string>Facter</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>397</integer>
+				<key>packageid</key>
+				<string>com.puppetlabs.facter</string>
+				<key>version</key>
+				<string>2.4.4</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.4.4</string>
+	</dict>
+</array>
+</plist>
