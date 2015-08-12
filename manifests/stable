@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>optional_installs</key>
+	<array>
+		<string>AdobeFlashPlayer</string>
+		<string>Alfred2</string>
+		<string>Atom</string>
+		<string>Dropbox</string>
+		<string>Evernote</string>
+		<string>Facter</string>
+		<string>GitHub</string>
+		<string>GoogleChrome</string>
+		<string>Handbrake</string>
+		<string>iTerm2</string>
+		<string>LaunchControl</string>
+	</array>
+</dict>
+</plist>
