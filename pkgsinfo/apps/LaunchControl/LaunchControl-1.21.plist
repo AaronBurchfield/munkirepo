@@ -20,6 +20,8 @@
 		<string>testing</string>
 		<string>production</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
 	<string>Create, manage, and debug launchd(8) services.</string>
 	<key>display_name</key>

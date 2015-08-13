@@ -21,7 +21,7 @@
 		<string>production</string>
 	</array>
 	<key>category</key>
-	<string>Text Editors</string>
+	<string>Development</string>
 	<key>description</key>
 	<string>A hackable text editor for the 21st Century</string>
 	<key>developer</key>

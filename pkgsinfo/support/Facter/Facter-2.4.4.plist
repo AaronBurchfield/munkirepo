@@ -20,6 +20,8 @@
 		<string>testing</string>
 		<string>production</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
 	<string>Facter is an independent, cross-platform Ruby library designed to gather information on all the nodes you will managing with Puppet.</string>
 	<key>display_name</key>

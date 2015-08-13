@@ -8,7 +8,6 @@
 	</array>
 	<key>optional_installs</key>
 	<array>
-		<string>AdobeFlashPlayer</string>
 		<string>Alfred2</string>
 		<string>Atom</string>
 		<string>Dropbox</string>

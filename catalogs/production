@@ -11,7 +11,7 @@
 			<string>production</string>
 		</array>
 		<key>category</key>
-		<string>Text Editors</string>
+		<string>Development</string>
 		<key>description</key>
 		<string>A hackable text editor for the 21st Century</string>
 		<key>developer</key>
@@ -131,6 +131,8 @@ exit 0
 			<string>testing</string>
 			<string>production</string>
 		</array>
+		<key>category</key>
+		<string>Web</string>
 		<key>description</key>
 		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 		<key>display_name</key>
@@ -210,7 +212,7 @@ exit 0
 		<key>display_name</key>
 		<string>Alfred 2</string>
 		<key>icon_hash</key>
-		<string>c6528bde10275e31f5b3755ee028e0111c6f26042ecafc19bf7b0faa5cfc5ff5</string>
+		<string>8a26d249ad13274487dbf3d93be9a529288b4910fc4cb70592bc2664979dd537</string>
 		<key>installer_item_hash</key>
 		<string>465daedb9a956f8a608eaa04dc4232cdfa644fbc7e78b50f0bb618504de55824</string>
 		<key>installer_item_location</key>
@@ -272,6 +274,8 @@ exit 0
 			<string>testing</string>
 			<string>production</string>
 		</array>
+		<key>category</key>
+		<string>File Sharing</string>
 		<key>description</key>
 		<string>Dropbox is a free service that lets you bring all your photos, docs, and videos anywhere. This means that any file you save to your Dropbox will automatically save to all your computers, phones and even the Dropbox website.</string>
 		<key>display_name</key>
@@ -350,6 +354,8 @@ fi
 			<string>testing</string>
 			<string>production</string>
 		</array>
+		<key>category</key>
+		<string>Apps</string>
 		<key>description</key>
 		<string>Evernote makes it easy to remember things big and small from your everyday life using your computer, phone, tablet and the web.</string>
 		<key>display_name</key>
@@ -415,8 +421,12 @@ fi
 			<string>testing</string>
 			<string>production</string>
 		</array>
+		<key>category</key>
+		<string>Development</string>
 		<key>description</key>
 		<string>Desktop app made by GitHub for seamless contribution to git projects.</string>
+		<key>developer</key>
+		<string>GitHub, Inc.</string>
 		<key>display_name</key>
 		<string>GitHub Desktop</string>
 		<key>icon_hash</key>
@@ -559,6 +569,8 @@ exit 0
 			<string>testing</string>
 			<string>production</string>
 		</array>
+		<key>category</key>
+		<string>Utilities</string>
 		<key>description</key>
 		<string>Powerful alternative to Terminal.app.</string>
 		<key>display_name</key>
@@ -622,12 +634,14 @@ exit 0
 			<string>testing</string>
 			<string>production</string>
 		</array>
+		<key>category</key>
+		<string>Utilities</string>
 		<key>description</key>
 		<string>Create, manage, and debug launchd(8) services.</string>
 		<key>display_name</key>
 		<string>LaunchControl</string>
 		<key>icon_hash</key>
-		<string>bc35bc31617c2898169d9740e29bca21af493139f3ecfb34d0aa9623172ff6ab</string>
+		<string>ed80a13f941549026e6a65c39ac4d8eb3dd0a92db89c10f6d936d31280148132</string>
 		<key>installer_item_hash</key>
 		<string>cdf534257f93728294ad07a2201026a063d8d0bd00e5d56b293a41afd88b149a</string>
 		<key>installer_item_location</key>
@@ -687,54 +701,8 @@ exit 0
 			<string>testing</string>
 			<string>production</string>
 		</array>
-		<key>description</key>
-		<string>Adobe® Flash® Player is a cross-platform browser-based application runtime that delivers uncompromised viewing of expressive applications, content, and videos across screens and browsers.</string>
-		<key>display_name</key>
-		<string>Adobe Flash Player</string>
-		<key>icon_hash</key>
-		<string>6e786116e5c98081959e28ed3dab8e151b843b012b251786f3c1fdaa77f1e7a9</string>
-		<key>installed_size</key>
-		<integer>16816</integer>
-		<key>installer_item_hash</key>
-		<string>1c72a229d592390f9eef465bb790ad035247a47755bbcb4884bf1bc29b5b4f1e</string>
-		<key>installer_item_location</key>
-		<string>internet_plugins/AdobeFlashPlayer-18.0.0.209.dmg</string>
-		<key>installer_item_size</key>
-		<integer>16040</integer>
-		<key>minimum_os_version</key>
-		<string>10.5.0</string>
-		<key>name</key>
-		<string>AdobeFlashPlayer</string>
-		<key>package_path</key>
-		<string>Install Adobe Flash Player.app/Contents/Resources/Adobe Flash Player.pkg</string>
-		<key>receipts</key>
-		<array>
-			<dict>
-				<key>installed_size</key>
-				<integer>16816</integer>
-				<key>packageid</key>
-				<string>com.adobe.pkg.FlashPlayer</string>
-				<key>version</key>
-				<string>18.0.0.209</string>
-			</dict>
-		</array>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>removepackages</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>18.0.0.209</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>testing</string>
-			<string>production</string>
-		</array>
+		<key>category</key>
+		<string>Utilities</string>
 		<key>description</key>
 		<string>Facter is an independent, cross-platform Ruby library designed to gather information on all the nodes you will managing with Puppet.</string>
 		<key>display_name</key>

@@ -20,6 +20,8 @@
 		<string>testing</string>
 		<string>production</string>
 	</array>
+	<key>category</key>
+	<string>Utilities</string>
 	<key>description</key>
 	<string>Powerful alternative to Terminal.app.</string>
 	<key>display_name</key>

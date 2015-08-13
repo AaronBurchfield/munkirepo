@@ -19,8 +19,12 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Development</string>
 	<key>description</key>
 	<string>GUI application for GitHub.com</string>
+	<key>developer</key>
+	<string>GitHub, Inc.</string>
 	<key>display_name</key>
 	<string>GitHub</string>
 	<key>installer_item_hash</key>
