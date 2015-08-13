@@ -209,6 +209,8 @@ exit 0
 		<string>Running with Crayons Ltd</string>
 		<key>display_name</key>
 		<string>Alfred 2</string>
+		<key>icon_hash</key>
+		<string>c6528bde10275e31f5b3755ee028e0111c6f26042ecafc19bf7b0faa5cfc5ff5</string>
 		<key>installer_item_hash</key>
 		<string>465daedb9a956f8a608eaa04dc4232cdfa644fbc7e78b50f0bb618504de55824</string>
 		<key>installer_item_location</key>
@@ -352,6 +354,8 @@ fi
 		<string>Evernote makes it easy to remember things big and small from your everyday life using your computer, phone, tablet and the web.</string>
 		<key>display_name</key>
 		<string>Evernote</string>
+		<key>icon_hash</key>
+		<string>5a39bc7bfd99bf1f3abb38e15c84de550cbaa4d0a53fea678b99c69a1be572a4</string>
 		<key>installer_item_hash</key>
 		<string>76d56eaf0d758af5b71473ef51c3488a4a19e0a173203e64784cf920efff013d</string>
 		<key>installer_item_location</key>
@@ -412,17 +416,17 @@ fi
 			<string>production</string>
 		</array>
 		<key>description</key>
-		<string>GUI application for GitHub.com</string>
+		<string>Desktop app made by GitHub for seamless contribution to git projects.</string>
 		<key>display_name</key>
-		<string>GitHub</string>
+		<string>GitHub Desktop</string>
 		<key>icon_hash</key>
 		<string>026ac35d0fa606224d34cfdc8bdca26c6457b0f58b8cbcd609896baaf173b104</string>
 		<key>installer_item_hash</key>
-		<string>0ea45811e9060443c5331a638100f9ecc6b02caccb2d2498e7590436a851062e</string>
+		<string>4b631d706dd9a1ad90422ae348fd58bd92c59489336b98e382e3f25174fa661a</string>
 		<key>installer_item_location</key>
-		<string>apps/GitHub/GitHub-208.dmg</string>
+		<string>apps/GitHub/GitHubDesktop-209.dmg</string>
 		<key>installer_item_size</key>
-		<integer>35743</integer>
+		<integer>36197</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -431,15 +435,15 @@ fi
 				<key>CFBundleIdentifier</key>
 				<string>com.github.GitHub</string>
 				<key>CFBundleName</key>
-				<string>GitHub</string>
+				<string>GitHub Desktop</string>
 				<key>CFBundleShortVersionString</key>
-				<string>The Sum of All Feels</string>
+				<string>Bae Branch</string>
 				<key>CFBundleVersion</key>
-				<string>208</string>
+				<string>209</string>
 				<key>minosversion</key>
 				<string>10.9</string>
 				<key>path</key>
-				<string>/Applications/GitHub.app</string>
+				<string>/Applications/GitHub Desktop.app</string>
 				<key>type</key>
 				<string>application</string>
 				<key>version_comparison_key</key>
@@ -452,40 +456,35 @@ fi
 				<key>destination_path</key>
 				<string>/Applications</string>
 				<key>source_item</key>
-				<string>GitHub.app</string>
+				<string>GitHub Desktop.app</string>
 			</dict>
 		</array>
 		<key>minimum_os_version</key>
 		<string>10.9</string>
 		<key>name</key>
-		<string>GitHub</string>
+		<string>GitHub Desktop</string>
 		<key>postinstall_script</key>
-		<string>#!/bin/sh
-CLI_SOURCE="/Applications/GitHub.app/Contents/MacOS/github_cli"
+		<string>#!/bin/bash
+
 DEST_DIR="/usr/local/bin"
-if [ ! -x "${CLI_SOURCE}" ]; then
-    exit 1
+
+if [[ ! -d "$DEST_DIR" ]]; then
+    mkdir -p "$DEST_DIR"
 fi
 
-if [ ! -d "${DEST_DIR}" ]; then
-    /bin/mkdir -p "${DEST_DIR}"
-fi
+ln -s "/Applications/GitHub Desktop.app/Contents/Resources/git-lfs/bin/git-lfs" "$DEST_DIR/git-lfs"
+ln -s "/Applications/GitHub Desktop.app/Contents/MacOS/github_cli" "$DEST_DIR/github"
 
-/bin/cp -f "${CLI_SOURCE}" "${DEST_DIR}/github"
-</string>
+exit 0
+            </string>
 		<key>unattended_install</key>
 		<true/>
 		<key>uninstall_method</key>
-		<string>uninstall_script</string>
-		<key>uninstall_script</key>
-		<string>#!/bin/sh
-/bin/rm -rf /Applications/GitHub.app
-/bin/rm -f /usr/local/bin/github
-</string>
+		<string>remove_copied_items</string>
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>208</string>
+		<string>209</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -499,6 +498,8 @@ fi
 		<string>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.</string>
 		<key>display_name</key>
 		<string>Handbrake</string>
+		<key>icon_hash</key>
+		<string>a95b0bbee655ae4d6218d5a9aa88aeddf27f0a77585d65ce06dbb27a52cb0dd4</string>
 		<key>installer_item_hash</key>
 		<string>9591cefbfcbe97ad4e039b456f82ea0e76035b5db9c9aa2ebca044fb171d4dd5</string>
 		<key>installer_item_location</key>
@@ -625,6 +626,8 @@ fi
 		<string>Create, manage, and debug launchd(8) services.</string>
 		<key>display_name</key>
 		<string>LaunchControl</string>
+		<key>icon_hash</key>
+		<string>bc35bc31617c2898169d9740e29bca21af493139f3ecfb34d0aa9623172ff6ab</string>
 		<key>installer_item_hash</key>
 		<string>cdf534257f93728294ad07a2201026a063d8d0bd00e5d56b293a41afd88b149a</string>
 		<key>installer_item_location</key>

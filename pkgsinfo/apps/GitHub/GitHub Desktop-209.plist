@@ -7,9 +7,9 @@
 		<key>created_by</key>
 		<string>mavis</string>
 		<key>creation_date</key>
-		<date>2015-08-11T03:06:29Z</date>
+		<date>2015-08-13T00:48:12Z</date>
 		<key>munki_version</key>
-		<string>2.2.4.2431</string>
+		<string>2.3.0.2517</string>
 		<key>os_version</key>
 		<string>10.11</string>
 	</dict>
@@ -18,17 +18,18 @@
 	<key>catalogs</key>
 	<array>
 		<string>testing</string>
+		<string>production</string>
 	</array>
 	<key>description</key>
-	<string>GUI application for GitHub.com</string>
+	<string>Desktop app made by GitHub for seamless contribution to git projects.</string>
 	<key>display_name</key>
-	<string>GitHub</string>
+	<string>GitHub Desktop</string>
 	<key>installer_item_hash</key>
-	<string>0ea45811e9060443c5331a638100f9ecc6b02caccb2d2498e7590436a851062e</string>
+	<string>4b631d706dd9a1ad90422ae348fd58bd92c59489336b98e382e3f25174fa661a</string>
 	<key>installer_item_location</key>
-	<string>apps/GitHub/GitHub-208.dmg</string>
+	<string>apps/GitHub/GitHubDesktop-209.dmg</string>
 	<key>installer_item_size</key>
-	<integer>35743</integer>
+	<integer>36197</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -37,15 +38,15 @@
 			<key>CFBundleIdentifier</key>
 			<string>com.github.GitHub</string>
 			<key>CFBundleName</key>
-			<string>GitHub</string>
+			<string>GitHub Desktop</string>
 			<key>CFBundleShortVersionString</key>
-			<string>The Sum of All Feels</string>
+			<string>Bae Branch</string>
 			<key>CFBundleVersion</key>
-			<string>208</string>
+			<string>209</string>
 			<key>minosversion</key>
 			<string>10.9</string>
 			<key>path</key>
-			<string>/Applications/GitHub.app</string>
+			<string>/Applications/GitHub Desktop.app</string>
 			<key>type</key>
 			<string>application</string>
 			<key>version_comparison_key</key>
@@ -58,39 +59,34 @@
 			<key>destination_path</key>
 			<string>/Applications</string>
 			<key>source_item</key>
-			<string>GitHub.app</string>
+			<string>GitHub Desktop.app</string>
 		</dict>
 	</array>
 	<key>minimum_os_version</key>
 	<string>10.9</string>
 	<key>name</key>
-	<string>GitHub</string>
+	<string>GitHub Desktop</string>
 	<key>postinstall_script</key>
-	<string>#!/bin/sh
-CLI_SOURCE="/Applications/GitHub.app/Contents/MacOS/github_cli"
+	<string>#!/bin/bash
+
 DEST_DIR="/usr/local/bin"
-if [ ! -x "${CLI_SOURCE}" ]; then
-    exit 1
+
+if [[ ! -d "$DEST_DIR" ]]; then
+    mkdir -p "$DEST_DIR"
 fi
 
-if [ ! -d "${DEST_DIR}" ]; then
-    /bin/mkdir -p "${DEST_DIR}"
-fi
+ln -s "/Applications/GitHub Desktop.app/Contents/Resources/git-lfs/bin/git-lfs" "$DEST_DIR/git-lfs"
+ln -s "/Applications/GitHub Desktop.app/Contents/MacOS/github_cli" "$DEST_DIR/github"
 
-/bin/cp -f "${CLI_SOURCE}" "${DEST_DIR}/github"
-</string>
+exit 0
+            </string>
 	<key>unattended_install</key>
 	<true/>
 	<key>uninstall_method</key>
-	<string>uninstall_script</string>
-	<key>uninstall_script</key>
-	<string>#!/bin/sh
-/bin/rm -rf /Applications/GitHub.app
-/bin/rm -f /usr/local/bin/github
-</string>
+	<string>remove_copied_items</string>
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>208</string>
+	<string>209</string>
 </dict>
 </plist>
