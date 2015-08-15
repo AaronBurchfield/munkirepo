@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>mavis</string>
+		<key>creation_date</key>
+		<date>2015-08-15T02:27:42Z</date>
+		<key>munki_version</key>
+		<string>2.3.0.2517</string>
+		<key>os_version</key>
+		<string>10.11</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>f.lux makes your computer screen look like the room you're in, all the time. When the sun sets, it makes your computer look like your indoor lights. In the morning, it makes things look like sunlight again.
+
+Tell f.lux what kind of lighting you have, and where you live. Then forget about it. f.lux will do the rest, automatically.</string>
+	<key>display_name</key>
+	<string>f.lux</string>
+	<key>installer_item_hash</key>
+	<string>4707b34fe34d5a1898706aade60c91fe93b7436fc35f49bc657603a29d6ce0c5</string>
+	<key>installer_item_location</key>
+	<string>apps/Flux/Flux-34.3.dmg</string>
+	<key>installer_item_size</key>
+	<integer>1278</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.herf.Flux</string>
+			<key>CFBundleName</key>
+			<string>Flux</string>
+			<key>CFBundleVersion</key>
+			<string>34.3</string>
+			<key>path</key>
+			<string>/Applications/Flux.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleVersion</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Flux.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Flux</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>34.3</string>
+</dict>
+</plist>
