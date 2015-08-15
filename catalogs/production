@@ -128,23 +128,24 @@ exit 0
 		<false/>
 		<key>catalogs</key>
 		<array>
-			<string>testing</string>
 			<string>production</string>
 		</array>
 		<key>category</key>
 		<string>Web</string>
 		<key>description</key>
 		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+		<key>developer</key>
+		<string>Google</string>
 		<key>display_name</key>
 		<string>Google Chrome</string>
 		<key>icon_hash</key>
 		<string>5816c1c1e3199f5ece45aa62c7d99e64f9902a94c8bfe5c70a9068de87d492d8</string>
 		<key>installer_item_hash</key>
-		<string>fad7204653d65c4e567ea2979747726cd1bd05b8c73264b69c660947e457e57d</string>
+		<string>91733185a9e350711e376ba0b681d31c5aec8f5f7acee9fe729537536d1e299d</string>
 		<key>installer_item_location</key>
-		<string>apps/GoogleChrome-44.0.2403.130.dmg</string>
+		<string>apps/GoogleChrome-44.0.2403.155.dmg</string>
 		<key>installer_item_size</key>
-		<integer>64659</integer>
+		<integer>64367</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -155,9 +156,9 @@ exit 0
 				<key>CFBundleName</key>
 				<string>Chrome</string>
 				<key>CFBundleShortVersionString</key>
-				<string>44.0.2403.130</string>
+				<string>44.0.2403.155</string>
 				<key>CFBundleVersion</key>
-				<string>2403.130</string>
+				<string>2403.155</string>
 				<key>minosversion</key>
 				<string>10.6.0</string>
 				<key>path</key>
@@ -188,7 +189,7 @@ exit 0
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>44.0.2403.130</string>
+		<string>44.0.2403.155</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

@@ -17,10 +17,14 @@
 	<false/>
 	<key>catalogs</key>
 	<array>
-		<string>testing</string>
+		<string>production</string>
 	</array>
+	<key>category</key>
+	<string>Web</string>
 	<key>description</key>
 	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+	<key>developer</key>
+	<string>Google</string>
 	<key>display_name</key>
 	<string>Google Chrome</string>
 	<key>installer_item_hash</key>
