@@ -6,13 +6,18 @@
 	<array>
 		<string>production</string>
 	</array>
+	<key>managed_installs</key>
+	<array>
+		<string>Facter</string>
+		<string>osquery</string>
+	</array>
 	<key>optional_installs</key>
 	<array>
 		<string>Alfred2</string>
 		<string>Atom</string>
 		<string>Dropbox</string>
 		<string>Evernote</string>
-		<string>Facter</string>
+		<string>Flux</string>
 		<string>GitHub Desktop</string>
 		<string>GoogleChrome</string>
 		<string>Handbrake</string>

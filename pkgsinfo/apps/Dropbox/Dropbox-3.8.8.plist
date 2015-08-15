@@ -17,10 +17,14 @@
 	<false/>
 	<key>catalogs</key>
 	<array>
-		<string>testing</string>
+		<string>production</string>
 	</array>
+	<key>category</key>
+	<string>File Sharing</string>
 	<key>description</key>
 	<string>Dropbox is a free service that lets you bring all your photos, docs, and videos anywhere. This means that any file you save to your Dropbox will automatically save to all your computers, phones and even the Dropbox website.</string>
+	<key>developer</key>
+	<string>Dropbox</string>
 	<key>display_name</key>
 	<string>Dropbox</string>
 	<key>installer_item_hash</key>

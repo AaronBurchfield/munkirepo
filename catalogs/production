@@ -7,11 +7,10 @@
 		<false/>
 		<key>catalogs</key>
 		<array>
-			<string>testing</string>
 			<string>production</string>
 		</array>
 		<key>category</key>
-		<string>Development</string>
+		<string>Text Editors</string>
 		<key>description</key>
 		<string>A hackable text editor for the 21st Century</string>
 		<key>developer</key>
@@ -21,11 +20,11 @@
 		<key>icon_hash</key>
 		<string>dce946bba4534f8f8cbb7ba2bacb3cf72d389303ff15ae31dc3b7a756af33064</string>
 		<key>installer_item_hash</key>
-		<string>b4db63acd87f84d4229ef15e4b620199569dd539e1d0ae2b4dafc4e907c5d74a</string>
+		<string>7c3e124bb6e8cf97482529e152935400e167c3b6f257d8884e129df5397784b0</string>
 		<key>installer_item_location</key>
-		<string>apps/Atom-1.0.5.dmg</string>
+		<string>apps/Atom-1.0.7.dmg</string>
 		<key>installer_item_size</key>
-		<integer>76054</integer>
+		<integer>76089</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -36,9 +35,9 @@
 				<key>CFBundleName</key>
 				<string>Atom</string>
 				<key>CFBundleShortVersionString</key>
-				<string>1.0.5</string>
+				<string>1.0.7</string>
 				<key>CFBundleVersion</key>
-				<string>1.0.5</string>
+				<string>1.0.7</string>
 				<key>minosversion</key>
 				<string>10.8</string>
 				<key>path</key>
@@ -121,7 +120,7 @@ exit 0
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>1.0.5</string>
+		<string>1.0.7</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -201,7 +200,6 @@ exit 0
 		</array>
 		<key>catalogs</key>
 		<array>
-			<string>testing</string>
 			<string>production</string>
 		</array>
 		<key>category</key>
@@ -272,23 +270,24 @@ exit 0
 		<false/>
 		<key>catalogs</key>
 		<array>
-			<string>testing</string>
 			<string>production</string>
 		</array>
 		<key>category</key>
 		<string>File Sharing</string>
 		<key>description</key>
 		<string>Dropbox is a free service that lets you bring all your photos, docs, and videos anywhere. This means that any file you save to your Dropbox will automatically save to all your computers, phones and even the Dropbox website.</string>
+		<key>developer</key>
+		<string>Dropbox</string>
 		<key>display_name</key>
 		<string>Dropbox</string>
 		<key>icon_hash</key>
 		<string>ca089e468cf43c8ade5eaa43b0a31473b5c36f7b16185281d6440e8069ebb318</string>
 		<key>installer_item_hash</key>
-		<string>8cdf529f755f5387fa6b7ed41e32e96c6f811e4422990a90dc0833d232900f4b</string>
+		<string>55d7161b99852d54b9749247abb1c5ed065e29e1c7af9611d310da6b3af3bda8</string>
 		<key>installer_item_location</key>
-		<string>apps/Dropbox/Dropbox-3.8.6.dmg</string>
+		<string>apps/Dropbox/Dropbox-3.8.8.dmg</string>
 		<key>installer_item_size</key>
-		<integer>36867</integer>
+		<integer>36862</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -345,7 +344,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>3.8.6</string>
+		<string>3.8.8</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -419,23 +418,79 @@ fi
 		<false/>
 		<key>catalogs</key>
 		<array>
+			<string>production</string>
+		</array>
+		<key>description</key>
+		<string>f.lux makes your computer screen look like the room you're in, all the time. When the sun sets, it makes your computer look like your indoor lights. In the morning, it makes things look like sunlight again.
+
+Tell f.lux what kind of lighting you have, and where you live. Then forget about it. f.lux will do the rest, automatically.</string>
+		<key>display_name</key>
+		<string>f.lux</string>
+		<key>installer_item_hash</key>
+		<string>4707b34fe34d5a1898706aade60c91fe93b7436fc35f49bc657603a29d6ce0c5</string>
+		<key>installer_item_location</key>
+		<string>apps/Flux/Flux-34.3.dmg</string>
+		<key>installer_item_size</key>
+		<integer>1278</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.herf.Flux</string>
+				<key>CFBundleName</key>
+				<string>Flux</string>
+				<key>CFBundleVersion</key>
+				<string>34.3</string>
+				<key>path</key>
+				<string>/Applications/Flux.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleVersion</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Flux.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.4.0</string>
+		<key>name</key>
+		<string>Flux</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>34.3</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
 			<string>testing</string>
 			<string>production</string>
 		</array>
-		<key>category</key>
-		<string>Development</string>
 		<key>description</key>
 		<string>Desktop app made by GitHub for seamless contribution to git projects.</string>
-		<key>developer</key>
-		<string>GitHub, Inc.</string>
 		<key>display_name</key>
 		<string>GitHub Desktop</string>
 		<key>icon_hash</key>
 		<string>026ac35d0fa606224d34cfdc8bdca26c6457b0f58b8cbcd609896baaf173b104</string>
 		<key>installer_item_hash</key>
-		<string>4b631d706dd9a1ad90422ae348fd58bd92c59489336b98e382e3f25174fa661a</string>
+		<string>4e116507e35833c1aaddf82510ec48606334a7fc54c3054fcb4471d3454dc09e</string>
 		<key>installer_item_location</key>
-		<string>apps/GitHub/GitHubDesktop-209.dmg</string>
+		<string>apps/GitHub/GitHubDesktop-210.dmg</string>
 		<key>installer_item_size</key>
 		<integer>36197</integer>
 		<key>installer_type</key>
@@ -448,9 +503,9 @@ fi
 				<key>CFBundleName</key>
 				<string>GitHub Desktop</string>
 				<key>CFBundleShortVersionString</key>
-				<string>Bae Branch</string>
+				<string>Bae's Branch</string>
 				<key>CFBundleVersion</key>
-				<string>209</string>
+				<string>210</string>
 				<key>minosversion</key>
 				<string>10.9</string>
 				<key>path</key>
@@ -495,7 +550,7 @@ exit 0
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>209</string>
+		<string>210</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
@@ -699,7 +754,6 @@ exit 0
 		<false/>
 		<key>catalogs</key>
 		<array>
-			<string>testing</string>
 			<string>production</string>
 		</array>
 		<key>category</key>
@@ -739,6 +793,53 @@ exit 0
 		<true/>
 		<key>version</key>
 		<string>2.4.4</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>production</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string>osquery allows you to easily ask questions about your Linux and OSX infrastructure. Whether your goal is intrusion detection, infrastructure reliability, or compliance, osquery gives you the ability to empower and inform a broad set of organizations within your company.</string>
+		<key>developer</key>
+		<string>Facebook</string>
+		<key>display_name</key>
+		<string>osquery</string>
+		<key>installed_size</key>
+		<integer>11494</integer>
+		<key>installer_item_hash</key>
+		<string>117ac67a27adc43ad32584a04627df4c79202976ba95210e33f502304ff1418b</string>
+		<key>installer_item_location</key>
+		<string>utilities/osquery/osquery-1.5.1.pkg</string>
+		<key>installer_item_size</key>
+		<integer>4001</integer>
+		<key>minimum_os_version</key>
+		<string>10.5.0</string>
+		<key>name</key>
+		<string>osquery</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>11494</integer>
+				<key>packageid</key>
+				<string>com.facebook.osquery</string>
+				<key>version</key>
+				<string>1.5.1</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.5.1</string>
 	</dict>
 </array>
 </plist>
