@@ -129,6 +129,8 @@ exit 0
 		<array>
 			<string>production</string>
 		</array>
+		<key>category</key>
+		<string>Web</string>
 		<key>description</key>
 		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 		<key>developer</key>
@@ -270,6 +272,8 @@ exit 0
 		<array>
 			<string>production</string>
 		</array>
+		<key>category</key>
+		<string>File Sharing</string>
 		<key>description</key>
 		<string>Dropbox is a free service that lets you bring all your photos, docs, and videos anywhere. This means that any file you save to your Dropbox will automatically save to all your computers, phones and even the Dropbox website.</string>
 		<key>developer</key>
@@ -473,88 +477,6 @@ Tell f.lux what kind of lighting you have, and where you live. Then forget about
 		<false/>
 		<key>catalogs</key>
 		<array>
-<<<<<<< HEAD
-			<string>testing</string>
-=======
->>>>>>> 8f4c309... OS X El Capitan Public Beta-5
-			<string>production</string>
-		</array>
-		<key>description</key>
-		<string>Desktop app made by GitHub for seamless contribution to git projects.</string>
-		<key>display_name</key>
-		<string>GitHub Desktop</string>
-		<key>icon_hash</key>
-		<string>026ac35d0fa606224d34cfdc8bdca26c6457b0f58b8cbcd609896baaf173b104</string>
-		<key>installer_item_hash</key>
-		<string>4e116507e35833c1aaddf82510ec48606334a7fc54c3054fcb4471d3454dc09e</string>
-		<key>installer_item_location</key>
-		<string>apps/GitHub/GitHubDesktop-210.dmg</string>
-		<key>installer_item_size</key>
-		<integer>36197</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.github.GitHub</string>
-				<key>CFBundleName</key>
-				<string>GitHub Desktop</string>
-				<key>CFBundleShortVersionString</key>
-				<string>Bae's Branch</string>
-				<key>CFBundleVersion</key>
-				<string>210</string>
-				<key>minosversion</key>
-				<string>10.9</string>
-				<key>path</key>
-				<string>/Applications/GitHub Desktop.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>GitHub Desktop.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.9</string>
-		<key>name</key>
-		<string>GitHub Desktop</string>
-		<key>postinstall_script</key>
-		<string>#!/bin/bash
-
-DEST_DIR="/usr/local/bin"
-
-if [[ ! -d "$DEST_DIR" ]]; then
-    mkdir -p "$DEST_DIR"
-fi
-
-ln -s "/Applications/GitHub Desktop.app/Contents/Resources/git-lfs/bin/git-lfs" "$DEST_DIR/git-lfs"
-ln -s "/Applications/GitHub Desktop.app/Contents/MacOS/github_cli" "$DEST_DIR/github"
-
-exit 0
-            </string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>210</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
 			<string>production</string>
 		</array>
 		<key>description</key>
@@ -677,70 +599,6 @@ exit 0
 		<true/>
 		<key>version</key>
 		<string>2.0</string>
-	</dict>
-	<dict>
-		<key>autoremove</key>
-		<false/>
-		<key>catalogs</key>
-		<array>
-			<string>production</string>
-		</array>
-		<key>description</key>
-		<string>Create, manage, and debug launchd(8) services.</string>
-		<key>display_name</key>
-		<string>LaunchControl</string>
-		<key>icon_hash</key>
-		<string>ed80a13f941549026e6a65c39ac4d8eb3dd0a92db89c10f6d936d31280148132</string>
-		<key>installer_item_hash</key>
-		<string>adf4b8c33f2b9aab70022fad92d409c3c6b2e66efd2d02370a1f0a0a657cf1bd</string>
-		<key>installer_item_location</key>
-		<string>apps/LaunchControl/LaunchControl-1.22.dmg</string>
-		<key>installer_item_size</key>
-		<integer>6125</integer>
-		<key>installer_type</key>
-		<string>copy_from_dmg</string>
-		<key>installs</key>
-		<array>
-			<dict>
-				<key>CFBundleIdentifier</key>
-				<string>com.soma-zone.LaunchControl</string>
-				<key>CFBundleName</key>
-				<string>LaunchControl</string>
-				<key>CFBundleShortVersionString</key>
-				<string>1.22</string>
-				<key>CFBundleVersion</key>
-				<string>698</string>
-				<key>minosversion</key>
-				<string>10.6</string>
-				<key>path</key>
-				<string>/Applications/LaunchControl.app</string>
-				<key>type</key>
-				<string>application</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-		</array>
-		<key>items_to_copy</key>
-		<array>
-			<dict>
-				<key>destination_path</key>
-				<string>/Applications</string>
-				<key>source_item</key>
-				<string>LaunchControl.app</string>
-			</dict>
-		</array>
-		<key>minimum_os_version</key>
-		<string>10.6</string>
-		<key>name</key>
-		<string>LaunchControl</string>
-		<key>unattended_install</key>
-		<true/>
-		<key>uninstall_method</key>
-		<string>remove_copied_items</string>
-		<key>uninstallable</key>
-		<true/>
-		<key>version</key>
-		<string>1.22</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
