@@ -129,8 +129,6 @@ exit 0
 		<array>
 			<string>production</string>
 		</array>
-		<key>category</key>
-		<string>Web</string>
 		<key>description</key>
 		<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
 		<key>developer</key>
@@ -272,8 +270,6 @@ exit 0
 		<array>
 			<string>production</string>
 		</array>
-		<key>category</key>
-		<string>File Sharing</string>
 		<key>description</key>
 		<string>Dropbox is a free service that lets you bring all your photos, docs, and videos anywhere. This means that any file you save to your Dropbox will automatically save to all your computers, phones and even the Dropbox website.</string>
 		<key>developer</key>
@@ -351,7 +347,6 @@ fi
 		<false/>
 		<key>catalogs</key>
 		<array>
-			<string>testing</string>
 			<string>production</string>
 		</array>
 		<key>category</key>
@@ -418,6 +413,7 @@ fi
 		<false/>
 		<key>catalogs</key>
 		<array>
+<<<<<<< HEAD
 			<string>production</string>
 		</array>
 		<key>description</key>
@@ -481,6 +477,70 @@ Tell f.lux what kind of lighting you have, and where you live. Then forget about
 			<string>testing</string>
 			<string>production</string>
 		</array>
+=======
+			<string>production</string>
+		</array>
+		<key>description</key>
+		<string>f.lux makes your computer screen look like the room you're in, all the time. When the sun sets, it makes your computer look like your indoor lights. In the morning, it makes things look like sunlight again.
+
+Tell f.lux what kind of lighting you have, and where you live. Then forget about it. f.lux will do the rest, automatically.</string>
+		<key>display_name</key>
+		<string>f.lux</string>
+		<key>installer_item_hash</key>
+		<string>4707b34fe34d5a1898706aade60c91fe93b7436fc35f49bc657603a29d6ce0c5</string>
+		<key>installer_item_location</key>
+		<string>apps/Flux/Flux-34.3.dmg</string>
+		<key>installer_item_size</key>
+		<integer>1278</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.herf.Flux</string>
+				<key>CFBundleName</key>
+				<string>Flux</string>
+				<key>CFBundleVersion</key>
+				<string>34.3</string>
+				<key>path</key>
+				<string>/Applications/Flux.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleVersion</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Flux.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.4.0</string>
+		<key>name</key>
+		<string>Flux</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>34.3</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>production</string>
+		</array>
+>>>>>>> 8f4c309... OS X El Capitan Public Beta-5
 		<key>description</key>
 		<string>Desktop app made by GitHub for seamless contribution to git projects.</string>
 		<key>display_name</key>
@@ -557,7 +617,6 @@ exit 0
 		<false/>
 		<key>catalogs</key>
 		<array>
-			<string>testing</string>
 			<string>production</string>
 		</array>
 		<key>description</key>
@@ -622,7 +681,6 @@ exit 0
 		<false/>
 		<key>catalogs</key>
 		<array>
-			<string>testing</string>
 			<string>production</string>
 		</array>
 		<key>category</key>
@@ -687,11 +745,8 @@ exit 0
 		<false/>
 		<key>catalogs</key>
 		<array>
-			<string>testing</string>
 			<string>production</string>
 		</array>
-		<key>category</key>
-		<string>Utilities</string>
 		<key>description</key>
 		<string>Create, manage, and debug launchd(8) services.</string>
 		<key>display_name</key>
@@ -699,11 +754,11 @@ exit 0
 		<key>icon_hash</key>
 		<string>ed80a13f941549026e6a65c39ac4d8eb3dd0a92db89c10f6d936d31280148132</string>
 		<key>installer_item_hash</key>
-		<string>cdf534257f93728294ad07a2201026a063d8d0bd00e5d56b293a41afd88b149a</string>
+		<string>adf4b8c33f2b9aab70022fad92d409c3c6b2e66efd2d02370a1f0a0a657cf1bd</string>
 		<key>installer_item_location</key>
-		<string>apps/LaunchControl/LaunchControl-1.21.dmg</string>
+		<string>apps/LaunchControl/LaunchControl-1.22.dmg</string>
 		<key>installer_item_size</key>
-		<integer>5385</integer>
+		<integer>6125</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -714,9 +769,9 @@ exit 0
 				<key>CFBundleName</key>
 				<string>LaunchControl</string>
 				<key>CFBundleShortVersionString</key>
-				<string>1.21</string>
+				<string>1.22</string>
 				<key>CFBundleVersion</key>
-				<string>689</string>
+				<string>698</string>
 				<key>minosversion</key>
 				<string>10.6</string>
 				<key>path</key>
@@ -747,7 +802,31 @@ exit 0
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>1.21</string>
+		<string>1.22</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>production</string>
+		</array>
+		<key>category</key>
+		<string>patches</string>
+		<key>description</key>
+		<string>OS X El Capitan Public Beta</string>
+		<key>developer</key>
+		<string>Apple</string>
+		<key>display_name</key>
+		<string>OS X El Capitan Public Beta</string>
+		<key>force_install_after_date</key>
+		<date>2015-08-19T08:00:00Z</date>
+		<key>installer_type</key>
+		<string>apple_update_metadata</string>
+		<key>name</key>
+		<string>OS X El Capitan Public Beta</string>
+		<key>version</key>
+		<string>5</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>

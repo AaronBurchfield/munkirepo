@@ -3,10 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>catalogs</key>
-	<array>
-		<string>production</string>
-	</array>
+	<array/>
 	<key>optional_installs</key>
+<<<<<<< HEAD
 	<array>
 		<string>Alfred2</string>
 		<string>Atom</string>
@@ -16,5 +15,8 @@
 		<string>GoogleChrome</string>
 		<string>Handbrake</string>
 	</array>
+=======
+	<array/>
+>>>>>>> 8f4c309... OS X El Capitan Public Beta-5
 </dict>
 </plist>

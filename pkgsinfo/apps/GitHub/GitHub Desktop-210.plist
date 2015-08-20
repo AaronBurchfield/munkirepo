@@ -17,7 +17,10 @@
 	<false/>
 	<key>catalogs</key>
 	<array>
+<<<<<<< HEAD
 		<string>testing</string>
+=======
+>>>>>>> 8f4c309... OS X El Capitan Public Beta-5
 		<string>production</string>
 	</array>
 	<key>description</key>

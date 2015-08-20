@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>mavis</string>
+		<key>creation_date</key>
+		<date>2015-08-20T01:47:09Z</date>
+		<key>munki_version</key>
+		<string>2.3.0.2517</string>
+		<key>os_version</key>
+		<string>10.11</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>category</key>
+	<string>patches</string>
+	<key>description</key>
+	<string>OS X El Capitan Public Beta</string>
+	<key>developer</key>
+	<string>Apple</string>
+	<key>display_name</key>
+	<string>OS X El Capitan Public Beta</string>
+	<key>force_install_after_date</key>
+	<date>2015-08-19T08:00:00Z</date>
+	<key>installer_type</key>
+	<string>apple_update_metadata</string>
+	<key>name</key>
+	<string>OS X El Capitan Public Beta</string>
+	<key>version</key>
+	<string>5</string>
+</dict>
+</plist>
