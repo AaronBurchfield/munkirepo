@@ -22,6 +22,7 @@
 		<string>Handbrake</string>
 		<string>iTerm2</string>
 		<string>LaunchControl</string>
-	</array>
+        <string>Slack</string>
+    </array>
 </dict>
 </plist>
