@@ -201,6 +201,8 @@ exit 0
 		<string>Slack is a platform for team communication: everything in one place, instantly searchable, available wherever you go.</string>
 		<key>display_name</key>
 		<string>Slack</string>
+		<key>icon_hash</key>
+		<string>cafc869a8655e3833d0d6d3f872b75d15529528bde2409105070407ba3c755b3</string>
 		<key>installer_item_hash</key>
 		<string>b7f9e7a89d67a0953a15cef413d566104acfc1418bd036d3087fcbb48f369e07</string>
 		<key>installer_item_location</key>

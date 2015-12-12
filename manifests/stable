@@ -21,8 +21,7 @@
 		<string>GoogleChrome</string>
 		<string>Handbrake</string>
 		<string>iTerm2</string>
-		<string>LaunchControl</string>
-        <string>Slack</string>
-    </array>
+		<string>Slack</string>
+	</array>
 </dict>
 </plist>
